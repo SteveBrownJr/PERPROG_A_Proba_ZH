@@ -61,6 +61,8 @@ namespace PERPROG_A_Proba_ZH
                         if (Érdeklődés>0)
                         {
                             Érdeklődés -= Program.rnd.Next(1, 6);
+                            if (Érdeklődés < 0)
+                                Érdeklődés = 0;
                         }
                         else
                         {
